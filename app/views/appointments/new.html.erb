@@ -1,10 +1,22 @@
-<%= simple_form_for @appointment do |f| %>
-  <%= f.input :name, label: 'Как Вас зовут?', as: :string, input_html: {class: 'w-50 ml-4'} %>
-  <%= f.input :email, label: 'Оставьте свой адрес эл. почты для связи', placeholder: 'user@domain.com', input_html: {class: 'w-50 ml-4'} %>
-  <%= f.input :date, label: 'Когда бы Вы хотели провести пробное занятие?', as: :date, input_html: {class: 'w-50 ml-4'},
-              start_year: Date.today.year,
-              end_year: Date.today.year + 1,
-              order: [:day, :month, :year]%>
-  <%= f.input :time, as: :time, label: "Во сколько Вам было бы удобно заниматься?" %>
-  <%= f.button :submit, label: 'Оставить заявку' %>
-<% end %>
+<div class="container m-auto d-lg-flex justify-content-center bg-white p-3">
+  <%= simple_form_for @appointment do |f| %>
+    <div class="form-group  w-75 ml-4">
+      <%= f.input :name, label: 'Как Вас зовут?', as: :string, input_html: {class: 'form-control'} %>
+    </div>
+    <div class="form-group  w-75 ml-4">
+      <%= f.input :email, label: 'Оставьте свой адрес эл. почты для связи', placeholder: 'user@domain.com', input_html: {class: 'form-control'} %>
+    </div>
+    <div class="form-group  w-75 ml-4">
+      <%= f.input :date, label: 'Когда бы Вы хотели провести пробное занятие?', as: :date, input_html: {class: 'form-control'},
+                  start_year: Date.today.year,
+                  end_year: Date.today.year + 1,
+                  order: [:day, :month, :year]%>
+    </div>
+    <div class="form-group  w-75 ml-4">
+      <%= f.input :time, as: :time, label: "Во сколько Вам было бы удобно заниматься?", input_html: {class: 'form-control'} %>
+    </div>
+    <div class="btn m-3">
+      <%= f.button :submit, label: 'Оставить заявку' %>
+    </div>
+  <% end %>
+</div>
