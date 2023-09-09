@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  date: 2023-09-05
+  time: 2023-09-05 15:21:04
+  email: MyString
+
+two:
+  name: MyString
+  date: 2023-09-05
+  time: 2023-09-05 15:21:04
+  email: MyString

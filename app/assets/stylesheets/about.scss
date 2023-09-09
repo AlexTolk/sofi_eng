@@ -107,6 +107,35 @@ body {
     justify-content: center;
   }
 }
+.social {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  padding: 5vh 0;
+  h2 {
+    margin-bottom: 4vh;
+  }
+  .soc-buttons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+  .soc-button {
+    font-size: 5vh;
+    color: #DCA5A3;
+    border: solid #DCA;
+    border-radius: 5px;
+    padding: 1vh 3vw;
+    margin: 2vh 2vw;
+  }
+
+  .soc-button:hover {
+    color: rgba(0,0,0,0.5);
+    border: solid rgba(0,0,0,0.5);
+  }
+}
 // Media queries
 
 

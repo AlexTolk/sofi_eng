@@ -1,11 +1,11 @@
 <div class="navbar">
-  <div class="nav-logo">
+  <%= link_to "/" do %><div class="nav-logo">
     <img src="https://img.freepik.com/free-vector/bird-colorful-gradient-design-vector_343694-2506.jpg" alt="">
-  </div>
+  </div><% end %>
   <div class="nav-menu">
     <ul class="menu-items">
-      <li>menu</li>
-      <li>menu</li>
+      <%= link_to "/formats" do %><li>Форматы уроков</li><% end %>
+      <%= link_to new_appointment_path do %><li>Запись</li><% end %>
       <li>menu</li>
     </ul>
   </div>
